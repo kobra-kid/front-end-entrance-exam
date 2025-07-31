@@ -276,8 +276,8 @@ main {
   transform: translateX(-50%);
   background-color: #000;
   color: #fff;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 0.5rem;
+  font-weight: 500;
   padding: 0.2rem 0.75rem;
   border-radius: 9999px; /* full rounded */
   z-index: 2;

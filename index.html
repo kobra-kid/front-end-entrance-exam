@@ -1,225 +1,224 @@
-  <!doctype html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Vite App</title>
-      <link rel="stylesheet" href="./css/style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-      <header class="profile-header">
-        <section class="profile-img">
-          <figure>
-            <img src="/public/profileImg.png" alt="">
-          </figure>
-        </section>
-        <section class="intro">
-          <div class="profile-info">
-            <p>Hello 👋🏻 I’m</p>
-            <h4>Karthik SR</h4>
-            <p style="color: #5C5C5C;">UX/UI Designer</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>front-end-entrance-exam</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="profile-header">
+      <section class="profile-img">
+        <figure>
+          <img src="./public/profileImg.png" alt="">
+        </figure>
+      </section>
+      <section class="intro">
+        <div class="profile-info">
+          <p>Hello 👋🏻 I’m</p>
+          <h4>Karthik SR</h4>
+          <p style="color: #5C5C5C;">UX/UI Designer</p>
+        </div>
+        <button id="download-pdf" class="dl-btn">Download CV</button>
+      </section>
+      <section class="languages">
+        <h4>Languages</h4>
+        <ul>
+          <li>
+            <p>English</p>
+            <div class="custom-meter">
+              <div class="fill" style="width: 100%;"></div>
+            </div>
+          </li>
+          <li>
+            <p>Malayalam</p>
+            <div class="custom-meter">
+              <div class="fill" style="width: 100%;"></div>
+            </div>
+          </li>
+          <li>
+            <p>Hindi</p>
+            <div class="custom-meter">
+              <div class="fill" style="width: 80%;"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <main class="skills">
+      <section class="exp-list">
+        <h2>Expirience</h2>
+        <article class="exp-item" data-highlight="true">
+          <header class="exp-header">
+            <time class="exp-date" datetime="2023-06">Jun. 2023 - Present</time>
+            <span class="exp-label">most recent</span>
+          </header>
+          <div class="desc">
+            <div class="job">
+              <h3>Marketing Manager</h3>
+              <p>Pankayam | Full-time</p>
+            </div>
+            <ul class="exp-duties">
+              <li>Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
+              <li>SEO Content Creation for Blogs, Website, Social media</li>
+            </ul>
           </div>
-          <button id="download-pdf" class="dl-btn">Download CV</button>
-        </section>
-        <section class="languages">
-          <h4>Languages</h4>
-          <ul>
-            <li>
-              <p>English</p>
-              <div class="custom-meter">
-                <div class="fill" style="width: 100%;"></div>
-              </div>
-            </li>
-            <li>
-              <p>Malayalam</p>
-              <div class="custom-meter">
-                <div class="fill" style="width: 100%;"></div>
-              </div>
-            </li>
-            <li>
-              <p>Hindi</p>
-              <div class="custom-meter">
-                <div class="fill" style="width: 80%;"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </header>
+        </article>
+        <article class="exp-item">
+          <header class="exp-header">
+            <time class="exp-date" datetime="2023-06">2017 - Present</time>
+          </header>
+          <div class="desc">
+            <div class="job">
+              <h3>Graphic / Web designer</h3>
+              <p>Freelance</p>
+            </div>
+            <ul class="exp-duties">
+              <li>Development of internal projects from scratch, product design of brands</li>
+              <li>Landing page, webapps and hybrid apps</li>
+              <li>Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="exp-item">
+          <header class="exp-header">
+            <time class="exp-date" datetime="2023-06">Sep. 2021 - Jun. 2023</time>
+          </header>
+          <div class="desc">
+            <div class="job">
+              <h3>Legal Assistant</h3>
+              <p>Law Firm | Intern</p>
+            </div>
+            <ul class="exp-duties">
+              <li>Provide administrative support to lawyer and enhance office effectiveness</li>
+              <li>Handle communication with clients, witnesses etc.</li>
+              <li>repare case briefs and summarize depositions, interrogatories and testimony</li>
+            </ul>
+          </div>
+        </article>
+        
+      </section>
+      <section class="tools-list">
+        <h2>Tools</h2>
+        <article class="tool-item">
+          <p>design</p>
+          <figure class="icons">
+            <img src="./public/logoFigma.svg" alt="">
+            <img src="./public/🦆 icon _adobe photoshop_.svg" alt="">
+            <img src="./public/🦆 icon _adobe illustrator_.svg" alt="">
+            <img src="./public/🦆 icon _adobe premiere_.svg" alt="">
+            <img src="./public/logoNotion.svg" alt="">
+            <img src="./public/logoMeet.svg" alt="">
+          </figure>
+        </article>
+        <article class="tool-item">
+          <p>no-code</p>
+          <figure class="icons">
+            <img src="./public/logoZapìer 1.svg" alt="">
+            <img src="./public/logoWebflow.svg" alt="">
+            <img src="./public/logoFramer.svg" alt="">
+            <img src="./public/logoWordpress.svg" alt="">
+          </figure>
+        </article>
+        <article class="tool-item">
+          <p>artoficial intelligence</p>
+          <figure class="icons">
+            <img src="./public/logoChatGPT 1.svg" alt="">
+            <img src="./public/logoCopilot 1.svg" alt="">
+            <img src="./public/logoMidjourney 1.svg" alt="">
+          </figure>
+        </article>
+      </section>
+    </main>
 
-      <main class="skills">
-        <section class="exp-list">
-          <h2>Expirience</h2>
-          <article class="exp-item" data-highlight="true">
-            <header class="exp-header">
-              <time class="exp-date" datetime="2023-06">Jun. 2023 - Present</time>
-              <span class="exp-label">most recent</span>
-            </header>
-            <div class="desc">
-              <div class="job">
-                <h3>Marketing Manager</h3>
-                <p>Pankayam | Full-time</p>
+    <footer class="personal-info">
+      <div class="left-side">
+        <section class="education">
+          <h2>Education</h2>
+          <div class="edu-list">
+            <article class="edu-item" data-highlight="true">
+              <div class="edu-period">
+                <time datetime="2023">2023</time>
+                <img src="./public/Vector.svg" alt="">
               </div>
-              <ul class="exp-duties">
-                <li>Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
-                <li>SEO Content Creation for Blogs, Website, Social media</li>
-              </ul>
-            </div>
-          </article>
-          <article class="exp-item">
-            <header class="exp-header">
-              <time class="exp-date" datetime="2023-06">2017 - Present</time>
-            </header>
-            <div class="desc">
-              <div class="job">
-                <h3>Graphic / Web designer</h3>
-                <p>Freelance</p>
+              <div class="edu-desc">
+                <h3>UI/UX</h3>
+                <ul class="edu-tags">
+                  <li>#UX</li>
+                  <li>#UI</li>
+                  <li>#research</li>
+                  <li>#DesignSystem</li>
+                  <li>#Ui</li>
+                  <li>#wireframing</li>
+                  <li>#figma</li>
+                  <li>#Ux</li>
+                </ul>
+                <p>Coursera</p>
               </div>
-              <ul class="exp-duties">
-                <li>Development of internal projects from scratch, product design of brands</li>
-                <li>Landing page, webapps and hybrid apps</li>
-                <li>Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.</li>
-              </ul>
-            </div>
-          </article>
-          <article class="exp-item">
-            <header class="exp-header">
-              <time class="exp-date" datetime="2023-06">Sep. 2021 - Jun. 2023</time>
-            </header>
-            <div class="desc">
-              <div class="job">
-                <h3>Legal Assistant</h3>
-                <p>Law Firm | Intern</p>
+            </article>
+            <article class="edu-item">
+              <div class="edu-period">
+                <time datetime="2017 - 2022">2017 - 2022</time>
               </div>
-              <ul class="exp-duties">
-                <li>Provide administrative support to lawyer and enhance office effectiveness</li>
-                <li>Handle communication with clients, witnesses etc.</li>
-                <li>repare case briefs and summarize depositions, interrogatories and testimony</li>
-              </ul>
-            </div>
-          </article>
-          
+              <div class="edu-desc">
+                <h3>Law</h3>
+                <ul class="edu-tags">
+                  <li>#law</li>
+                  <li>#legalStudies</li>
+                  <li>#contracts</li>
+                  <li>#internationalLaws</li>
+                </ul>
+                <p>University of Kerala</p>
+              </div>
+            </article>
+            <article class="edu-item">
+              <div class="edu-period">
+                <time datetime="2017">2017</time>
+              </div>
+              <div class="edu-desc">
+                <h3>Graphic design</h3>
+                <ul class="edu-tags">
+                  <li>#branding</li>
+                  <li>#web</li>
+                  <li>#illustration</li>
+                  <li>#adobe</li>
+                </ul>
+                <p>Coursera</p>
+              </div>
+            </article>
+          </div>
         </section>
-        <section class="tools-list">
-          <h2>Tools</h2>
-          <article class="tool-item">
-            <p>design</p>
-            <figure class="icons">
-              <img src="/public/logoFigma.svg" alt="">
-              <img src="/public/🦆 icon _adobe photoshop_.svg" alt="">
-              <img src="/public/🦆 icon _adobe illustrator_.svg" alt="">
-              <img src="/public/🦆 icon _adobe premiere_.svg" alt="">
-              <img src="/public/logoNotion.svg" alt="">
-              <img src="/public/logoMeet.svg" alt="">
-            </figure>
-          </article>
-          <article class="tool-item">
-            <p>no-code</p>
-            <figure class="icons">
-              <img src="/public/logoZapìer 1.svg" alt="">
-              <img src="/public/logoWebflow.svg" alt="">
-              <img src="/public/logoFramer.svg" alt="">
-              <img src="/public/logoWordpress.svg" alt="">
-            </figure>
-          </article>
-          <article class="tool-item">
-            <p>design</p>
-            <figure class="icons">
-              <img src="/public/logoChatGPT 1.svg" alt="">
-              <img src="/public/logoCopilot 1.svg" alt="">
-              <img src="/public/logoMidjourney 1.svg" alt="">
-            </figure>
-          </article>
+      </div>
+      <div class="right-side">
+        <section class="interests">
+          <h2>Interests</h2>
+          <div class="int-list">
+            <ul>
+              <li>branding</li>
+              <li>design</li>
+              <li>photography</li>
+              <li>artificial intelligence</li>
+              <li>illustration</li>
+              <li>typography</li>
+              <li>social networks</li>
+              <li>research</li>
+              <li>dron pilot</li>
+              <li>games</li>
+            </ul>
+          </div>
         </section>
-      </main>
+        <section class="contact">
+          <h3>Let´s chat! I´m ready to work on excinting projects</h3>
+          <p>srkarthik.designscape@gmail.com</p>
+        </section>
+      </div>
+    </footer>
 
-      <footer class="personal-info">
-        <div class="left-side">
-          <section class="education">
-            <h2>Education</h2>
-            <div class="edu-list">
-              <article class="edu-item" data-highlight="true">
-                <div class="edu-period">
-                  <time datetime="2023">2023</time>
-                  <img src="/public/Vector.svg" alt="">
-                </div>
-                <div class="edu-desc">
-                  <h3>UI/UX</h3>
-                  <ul class="edu-tags">
-                    <li>#UX</li>
-                    <li>#UI</li>
-                    <li>#research</li>
-                    <li>#DesignSystem</li>
-                    <li>#Ui</li>
-                    <li>#wireframing</li>
-                    <li>#figma</li>
-                    <li>#Ux</li>
-                  </ul>
-                  <p>Coursera</p>
-                </div>
-              </article>
-              <article class="edu-item">
-                <div class="edu-period">
-                  <time datetime="2017 - 2022">2017 - 2022</time>
-                </div>
-                <div class="edu-desc">
-                  <h3>Law</h3>
-                  <ul class="edu-tags">
-                    <li>#law</li>
-                    <li>#legalStudies</li>
-                    <li>#contracts</li>
-                    <li>#internationalLaws</li>
-                  </ul>
-                  <p>University of Kerala</p>
-                </div>
-              </article>
-              <article class="edu-item">
-                <div class="edu-period">
-                  <time datetime="2017">2017</time>
-                </div>
-                <div class="edu-desc">
-                  <h3>Graphic design</h3>
-                  <ul class="edu-tags">
-                    <li>#branding</li>
-                    <li>#web</li>
-                    <li>#illustration</li>
-                    <li>#adobe</li>
-                  </ul>
-                  <p>Coursera</p>
-                </div>
-              </article>
-            </div>
-          </section>
-        </div>
-        <div class="right-side">
-          <section class="interests">
-            <h2>Interests</h2>
-            <div class="int-list">
-              <ul>
-                <li>branding</li>
-                <li>design</li>
-                <li>photography</li>
-                <li>artificial intelligence</li>
-                <li>illustration</li>
-                <li>typography</li>
-                <li>social networks</li>
-                <li>research</li>
-                <li>dron pilot</li>
-                <li>games</li>
-              </ul>
-            </div>
-          </section>
-          <section class="contact">
-            <h3>Let´s chat! I´m ready to work on excinting projects</h3>
-            <p>srkarthik.designscape@gmail.com</p>
-          </section>
-        </div>
-      </footer>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-      <script type="module" src="./js/main.js"></script>
-    </body>
-  </html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
