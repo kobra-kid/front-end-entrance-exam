@@ -1,24 +1,72 @@
-import '../css/style.css'
-import javascriptLogo from '../javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+// js/main.js
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+document.addEventListener("DOMContentLoaded", () => {
+  const textTags = [
+    "p",
+    "h1",
+    "h2",
+    "h3",
+    "h4",
+    "h5",
+    "h6",
+    "li",
+    "span",
+    "time",
+  ];
 
-setupCounter(document.querySelector('#counter'))
+  // Назначаем contenteditable на подходящие элементы
+  textTags.forEach((tag) => {
+    document.querySelectorAll(tag).forEach((el) => {
+      if (
+        el.childNodes.length === 1 &&
+        el.childNodes[0].nodeType === Node.TEXT_NODE &&
+        el.textContent.trim() !== ""
+      ) {
+        el.setAttribute("contenteditable", "true");
+      }
+    });
+  });
+
+  // Теперь найдём все contenteditable элементы и подключим логику сохранения
+  const editableElements = document.querySelectorAll(
+    '[contenteditable="true"]',
+  );
+
+  editableElements.forEach((el, index) => {
+    const key = `editable-${index}`;
+
+    // Подставить сохранённый текст из localStorage
+    const saved = localStorage.getItem(key);
+    if (saved !== null) {
+      el.innerText = saved;
+    }
+
+    // Сохранять при потере фокуса
+    el.addEventListener("blur", () => {
+      localStorage.setItem(key, el.innerText);
+    });
+  });
+});
+
+// Кнопка для сохранения в PDF
+document.getElementById("download-pdf").addEventListener("click", () => {
+  const btn = document.getElementById("download-pdf");
+  btn.style.display = "none"; // скрыть кнопку
+
+  const element = document.body; // или другой контейнер
+
+  const opt = {
+    filename: "resume.pdf",
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+  };
+
+  html2pdf()
+    .set(opt)
+    .from(element)
+    .save()
+    .then(() => {
+      btn.style.display = ""; // вернуть кнопку
+    });
+});
